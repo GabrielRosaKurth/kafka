@@ -14,7 +14,7 @@ public class Producer {
         var producer = new KafkaProducer<String, String>(properties());
         var key = "likes";
         var value = "4523";
-        var record = new ProducerRecord<String, String>("TEST_TOPIC", key, value);
+        var record = new ProducerRecord<String, String>("EXEMPLO_TOPICO", key, value);
         Callback callback = (data, ex) -> {
             if (ex != null) {
                 ex.printStackTrace();
